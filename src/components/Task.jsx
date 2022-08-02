@@ -10,21 +10,15 @@ const TaskComponent = ({ task, completar, remover }) => {
     switch (task.level) {
       case LEVELS.NORMAL:
         return (
-
           <span className='badge badge-normal'>{task.level}</span>
-
         )
       case LEVELS.URGENT:
         return (
-
           <span className='badge badge-urgent'>{task.level}</span>
-
         )
       case LEVELS.BLOCKING:
         return (
-
           <span className='badge badge-blocking'>{task.level}</span>
-
         )
       default:
         break;
