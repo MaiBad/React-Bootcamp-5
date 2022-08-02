@@ -34,8 +34,7 @@ const TaskForm = ({ agregar, length }) => {
       .max(15, 'Descripción demasiado larga')
       .required('Descripción obligatoria'),
     level: Yup.string()
-  }
-  )
+  })
 
   return (
     <Formik
